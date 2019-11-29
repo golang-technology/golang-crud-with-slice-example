@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<h1>Details</h1>
+<div>
+    <form method="get" action="/detail/{{.Id}}">
+        <table>
+            <tr>
+                <td>Id</td>
+                <td><input type="text" name="id", value="{{.Id}}" disabled></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" value="{{.Username}}"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="password" value="{{.Password}}"></td>
+            </tr>
+            <tr>
+                <td>Fullname</td>
+                <td><input type="text" name="fullname" value="{{.Fullname}}"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
